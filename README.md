@@ -33,7 +33,7 @@ animate_fa2(G, f, num_iterations=100, output_dir='/tmp/fa2', edge_type='straight
 
 This will output `num_iterations` frames to `/tmp/fa2`. If you choose anything other than `edge_type='straight'` it will attempt to use the [curved edges](https://github.com/beyondbeneath/bezier-curved-edges-networkx) function that you will need to have in the same file. All the node & edge formatting are hard-coded in the function, but can be easily modified.
 
-From here, you can combine the frames into an animated gif using your favourite tool. For example, using [ImageMagick convert tool](https://imagemagick.org/script/convert.php) on MacOS:
+From here, you can combine the frames into an animated gif using your favourite tool. For example, using [ImageMagick convert tool](https://imagemagick.org/script/convert.php) on MacOS (which can be installed using `brew install imagemagick`):
 
 ```
 convert -delay 10 anim_frame_* animation.gif
